@@ -1,106 +1,112 @@
+/* variables */
+:root {
+    --primary-color: #931420;
+    --accent-color: #f6bb73;
+    --light-accent: #fffded;
+    --light: white;
+    --dark: black;
+}
+/* reset */
 * {
-  box-sizing: border-box;
-  margin: 0; 
-  padding: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
+/* the default styles for the elements */
 body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 1em;
-  width: 900px; /* Matches Rubric Requirement */
-  margin: 0 auto; 
-  border: 4px solid steelblue;
-  box-shadow: 0px 5px 14px 10px black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 100%;
+    width: 80%;
+    margin: auto;
+    border: 3px solid var(--primary-color);
 }
-
-h1 {
-  font-size: 3em;
-  color: steelblue;
-  font-style: italic;
+header, section, aside, footer { padding: 1em; }
+h1, h2, h3, p, article, blockquote { padding-bottom: .5em; }
+ul { margin-left: 1.5em; }
+h1 { font-size: 150%; }
+h2 { font-size: 120%; }
+h3 { font-size: 110%; }
+a:focus, a:hover {
+    font-style: italic;
 }
-
-h2 {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-h3 {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
-p, h3, h4 {
-  margin-bottom: 15px;
-}
-
-blockquote {
-  font-style: italic;
-  margin: 0 40px 15px 40px;
-}
-
-a {
-  font-weight: bold;
-}
-
+/* the styles for the header */
 header {
-  background-image: linear-gradient(to bottom, white, lightsteelblue);
-  border-bottom: 4px solid steelblue;
-  overflow: auto;
-  padding: 20px;
+    border-bottom: 3px solid var(--primary-color);
+    background-image: linear-gradient(30deg, 
+        var(--accent-color) 0%, 
+        var(--light-accent) 25%, 
+        var(--light) 50%, 
+        var(--light-accent) 75%, 
+        var(--accent-color) 100%);
 }
-
+header h2 {
+    font-size: 175%;
+    color: var(--primary-color);
+    padding-bottom: 0;
+}
+header h3 {
+    font-size: 130%;
+    font-style: italic;
+}
 header img {
-  float: left; 
-  margin-right: 2em;
+    float: left;
+    margin: 0 30px;
+    width: clamp(40px, 15%, 66px);
 }
-
+/* the styles for the main element */
 main {
-  clear: left;
-  padding: 20px;
-  padding-bottom: 50px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: flex-start;
 }
-
-section a:link, section a:visited {
-  color: maroon;
+/* the styles for the section */
+section {
+    width: 50%;
 }
-
-section a:focus, section a:hover { 
-  color: steelblue;
+section h1 {
+    padding-top: .5em;
 }
-
-ul {
-  line-height: 1.5;
+section h2 {
+    color: var(--primary-color);
 }
-
-aside { 
-  border: 2px solid steelblue;
-  border-radius: 20px; 
-  margin-top: 20px;
-  padding: 20px;
+section article + h2 {
+    clear: right;
+    border-top: 3px solid var(--primary-color);
+    padding-top: .5em;
 }
-
-aside h3 {
-  color: maroon;
+section blockquote {
+    font-style: italic;
+    margin-left: 2em;
 }
-
-aside a:link, aside a:visited {
-  color: steelblue;
+/* the styles for the article */
+article {
+    border-top: 3px solid var(--primary-color);
+    padding-top: .5em;
+    margin-bottom: .5em;
 }
-
-aside a:hover, aside a:focus {
-  color: maroon;
+article img {
+    float: right;
+    margin: .25em 0 1em 1em;
+    border: 1px solid var(--dark);
+    width: min(100%, 225px);
 }
-
-aside ul {
-  padding-left: 10px;
-  margin-top: 10px;
+/* the styles for the aside */
+aside {
+    width: 20%;
 }
-
+aside h2 {
+    color: var(--primary-color);
+}
+aside img {
+    margin-bottom: .9em;
+}
+/* the styles for the footer */
 footer {
-  background-color: steelblue;
-  color: white;
-  text-align: center;
-  font-size: 1em;
-  padding: 15px;
-  margin-top: 10px;
+    background-color: var(--primary-color);
+}
+footer p {
+    text-align: center;
+    color: white;
+    padding-bottom: 0;
 }
