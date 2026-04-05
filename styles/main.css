@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  margin: 0; 
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  width: 900px; /* Matches Rubric Requirement */
+  margin: 0 auto; 
+  border: 4px solid steelblue;
+  box-shadow: 0px 5px 14px 10px black;
+}
+
+h1 {
+  font-size: 3em;
+  color: steelblue;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+p, h3, h4 {
+  margin-bottom: 15px;
+}
+
+blockquote {
+  font-style: italic;
+  margin: 0 40px 15px 40px;
+}
+
+a {
+  font-weight: bold;
+}
+
+header {
+  background-image: linear-gradient(to bottom, white, lightsteelblue);
+  border-bottom: 4px solid steelblue;
+  overflow: auto;
+  padding: 20px;
+}
+
+header img {
+  float: left; 
+  margin-right: 2em;
+}
+
+main {
+  clear: left;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+section a:link, section a:visited {
+  color: maroon;
+}
+
+section a:focus, section a:hover { 
+  color: steelblue;
+}
+
+ul {
+  line-height: 1.5;
+}
+
+aside { 
+  border: 2px solid steelblue;
+  border-radius: 20px; 
+  margin-top: 20px;
+  padding: 20px;
+}
+
+aside h3 {
+  color: maroon;
+}
+
+aside a:link, aside a:visited {
+  color: steelblue;
+}
+
+aside a:hover, aside a:focus {
+  color: maroon;
+}
+
+aside ul {
+  padding-left: 10px;
+  margin-top: 10px;
+}
+
+footer {
+  background-color: steelblue;
+  color: white;
+  text-align: center;
+  font-size: 1em;
+  padding: 15px;
+  margin-top: 10px;
+}
